@@ -1,7 +1,11 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, withRouter } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = (props) => {
+    // console.log(props);
+    // setTimeout(() => {
+    //     props.history.push('/about')
+    // }, 2000)
     return (
         <nav className="nav-wrapper red darken-3">
             <div className="container">
@@ -9,7 +13,7 @@ const Navbar = () => {
                 <ul className="right">
                     <li><Link to="/" href="/">Home</Link></li>
                     <li><Link to="/about" href="/about">About</Link></li>
-                    <li><Link to="/caonatct" href="/contact">Contact</Link></li>
+                    <li><NavLink to="/contact" href="/contact">Contact</NavLink></li>
                 </ul>
                 {/* Use navLink active call added default but notin Link */}
             </div>
@@ -17,4 +21,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default withRouter(Navbar)

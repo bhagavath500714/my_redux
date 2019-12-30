@@ -64,7 +64,7 @@ const Records = ({records, deleteRecord}) => {
                     <div>Name: { file.name }</div>
                     <div>Age: { file.age }</div>
                     <div>Belt: { file.belt }</div>
-                    {/* annonimus function */}
+                    {/*  annonimus function  */}
                     <button onClick={() => {deleteRecord(file.id)}}>Delete</button>
                 </div>
             )             

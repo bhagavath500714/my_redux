@@ -7,8 +7,8 @@ const Contact = (props) => {
   }, 2000);
     return (
         <div className="container">
-          <h4 className="center">Contact</h4>
-          <p>lorem test</p>  
+          <h4 className="center"> Contact </h4>
+          <p> lorem test </p>  
         </div>
     )
 }

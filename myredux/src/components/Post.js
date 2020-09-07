@@ -33,7 +33,7 @@ class Post extends Component {
              </div> 
             </div>
         ) : (
-            <div className="center">Loading post ...</div>
+            <div className="center">Loading post ... </div>
         )
         return(
             <div className="Container">
